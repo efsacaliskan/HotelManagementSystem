@@ -1,3 +1,9 @@
+Before running web application
+Start MySQL database
+Start backend application
+For calling RestFul services from JavaScript you must add @CrossOrigin annotation to the @RestController classes
+
+
 Main Page 
 ![Ekran görüntüsü 2024-01-11 210911](https://github.com/efsacaliskan/HotelManagementSystem/assets/100141705/319e27de-0eb8-484c-85fd-7074267d1070)
 
