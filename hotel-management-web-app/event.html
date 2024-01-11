@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="scripts/functions.js"></script>
+
+
+
+    
+  </head>
+  <body>
+<header class="header">
+  <div >
+    <nav >
+      <a  class="pagename" >
+       Four Seasons Hotel
+      </a>
+
+        <ul class="navigation" >
+          <li >
+            <a  href="index.html">Main Page </a>
+          </li>
+          <li >
+            <a  href="reservation.html"> Reservation</a>
+          </li>
+          <li >
+            <a  href="event.html">Events</a>
+          </li>
+        </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="eventTable" style="padding: 1.5%;"></div>
+	<script>
+		getEvents(printEventsAsTable);
+	</script>
+
+</body>
+</html>

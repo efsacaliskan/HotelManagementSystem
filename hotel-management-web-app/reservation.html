@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Five Seasons Hotel Reservation</title>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<link href="css/style.css" rel="stylesheet" />
+<script src="scripts/functions.js"></script>
+
+</head>
+<body>
+  <header class="header">
+    <div >
+      <nav >
+        <a class="pagename" >
+         Four Seasons Hotel
+        </a>
+  
+          <ul class="navigation" >
+            <li >
+              <a  href="index.html">Main Page </a>
+            </li>
+            <li >
+              <a  href="reservation.html"> Reservation</a>
+            </li>
+            <li >
+              <a  href="event.html">Events</a>
+            </li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+<div class="container">
+  <a class="reservationText" style="padding-left: 40%;"> Book a Room</a>
+
+  <form style="padding-top: 5%;" id="reservation-form"  onsubmit="return createReservation()">  
+    <div class="input-group">
+      <label >Name</label>
+      <input type="text" id="name1" required >     
+    </div>
+    
+    <div class="input-group">
+      <label >Surname</label>
+      <input type="text" id="surname" required >
+    </div>
+    
+    <div class="input-group">
+      <label >Phone Number</label>
+      <input type="number" id="contactNumber" required >
+    </div>
+    <div class="input-group">
+      <label >E-Mail</label>
+      <input type="email" id="email"  required >
+    </div>
+    <div class="input-group">
+      <label >Location</label>
+      <input type="text" id="address" required >
+    </div>
+    
+    <div class="input-group">
+      <label >Select Room Type</label>
+      <select id="room-type" name="room-type">
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label >Arrival Date</label>
+      <input type="date" id="arrival-date" name="arrival-date">
+    </div>
+    <div class="input-group">
+      <label >Leave Date</label>
+      <input type="date" id="leave-date" name="arrival-date">
+    </div>
+
+    <div class="input-group">
+      <button id="submit" type="submit">Complete Reservation</button>
+    </div>
+
+  </form>
+
+  <div id="message"></div>
+  <div id="message2"></div>
+  
+  <div style="padding-top: 3%;">
+  <a class="reservationText" > Check Existing Reservation</a>
+
+  <form style="padding-top: 5%;" id="reservation-form"   onsubmit="return getReservation(printReservationAsTable)">
+    
+    <div class="input-group">
+      <label >Guest ID</label>
+      <input type="number" id="guestid" >
+    </div>
+ 
+    <div class="input-group">
+      
+  
+      <button >Check Reservation</button>
+    
+     <a href="manageres.html" style="padding-top: 1%;">Manage Reservation</a>
+    </div>
+  </form>
+
+  <div id="reservationTable" style="padding: 1.5%;"></div>
+
+</div>
+
+
+
+</div>
+
+
+<script >
+
+		getRooms();
+	
+</script>
+
+</body>
+</html>

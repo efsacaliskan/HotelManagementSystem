@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Five Seasons Hotel Reservation</title>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<link href="css/style.css" rel="stylesheet" />
+<script src="scripts/functions.js"></script>
+
+</head>
+<body>
+  <header class="header">
+    <div >
+      <nav >
+        <a class="pagename" >
+         Four Seasons Hotel
+        </a>
+  
+          <ul class="navigation" >
+            <li >
+              <a  href="index.html">Main Page </a>
+            </li>
+            <li >
+              <a  href="reservation.html"> Reservation</a>
+            </li>
+            <li >
+              <a  href="event.html">Events</a>
+            </li>
+
+          </ul>
+      </nav>
+    </div>
+  </header>
+
+
+<div class="container"></div>
+
+<div style="padding-top: 3%;">
+  <a class="reservationText" > Cancel Reservation</a>
+
+  <form style="padding-top: 5%;" id="reservation-form" onsubmit="return cancelReservation()">
+    
+    <div class="input-group">
+      <label >Guest ID</label>
+      <input type="number" id="guestid2" >
+    </div>
+ 
+
+    <div class="input-group">
+      <button type="submit">Cancel Reservation</button>
+    </div>
+    
+  </form>
+
+  <div id="reservationTable" style="padding: 1.5%;"></div>
+
+</div>
+
+
+</div>
+
+
+<script >
+
+		getRooms();
+	
+</script>
+
+</body>
+</html>
