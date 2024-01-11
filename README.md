@@ -1,4 +1,5 @@
 Before running web application
+
 Start MySQL database
 Start backend application
 For calling RestFul services from JavaScript you must add @CrossOrigin annotation to the @RestController classes
