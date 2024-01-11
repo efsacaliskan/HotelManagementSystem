@@ -1,6 +1,7 @@
 In our web application, user can select any kinds of room such as King Suite, Normal Suite, and Junior Suite from the Main Page. Then, user can book a room by filling the necessary information. Also, user can check the reservation information with Guest id. Moreover, if the user want to cancel its' reservation, it can be done by just typing Guest id.
 
 
+
 Before running web application
 
 Start MySQL database
@@ -8,6 +9,7 @@ Start MySQL database
 Start backend application
 
 For calling RestFul services from JavaScript you must add @CrossOrigin annotation to the @RestController classes
+
 
 
 Main Page 
