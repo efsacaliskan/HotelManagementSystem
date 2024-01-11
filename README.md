@@ -16,4 +16,6 @@ Reservation Page
 Reservation Cancellation Page
 ![image](https://github.com/efsacaliskan/HotelManagementSystem/assets/100141705/733bc237-df1e-4f1f-b6cb-0ec505af1681)
 
+Screen Flow Diagram
+![image](https://github.com/efsacaliskan/HotelManagementSystem/assets/100141705/db3a5d18-ee4f-44f5-9296-36d87933303d)
 
